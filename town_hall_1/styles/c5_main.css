@@ -3,16 +3,47 @@
 	--global-color-1: #800000;
 }
 
-/* the styles for the elements */
+/* the styles for the body */
 body {
-	font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; 
     font-size: 100%;
-    margin-left: 10px;
+    width: 600px; 
+    margin: 0 auto; 
+    border: 3px solid #931420; 
+    background-color: #fffded; 
 }
+
+/* Set HTML background color */
+html {
+    background-color: white; 
+}
+
 a:focus, a:hover {
 	font-style: italic;
 }
 /* the styles for the header */
+header {
+    border-bottom: 3px solid #931420; 
+}
+
+main h1 {
+    border-top: 3px solid #931420; 
+    border-bottom: 3px solid #931420; 
+}
+
+footer {
+    background-color: #931420; 
+    color: white;
+}
+
+/* Header styles */
+header {
+    border-bottom: 3px solid #931420;
+    padding-top: 1.5em; 
+    padding-bottom: 2em; 
+    background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+
 header h2 {
 	font-size: 175%;
 	color: var(--global-color-1);
@@ -22,6 +53,9 @@ header h3 {
 	font-size: 130%;
 	font-style: italic;
 	text-indent: 30px;
+	text-indent: 0; 
+        padding-right: 30px; 
+        padding-left: 30px; 
 }
 header img {
 	float: left;
@@ -32,19 +66,27 @@ header img {
 /* the styles for the main content */
 main {
 	clear: left;
+	padding-right: 30px; 
+        padding-left: 30px; 
 }
 main h1 {
 	font-size: 150%;
 	padding: .3em 0;
+	padding-top: .3em; 
+        padding-bottom: .3em; 
 }
 main h2 {
 	color: var(--global-color-1);
 	font-size: 130%;
 	padding: .5em 0 .25em 0;
+	padding-top: .5em;       
+	padding-bottom: .25em; 
+	
 }
 main h3 {
 	font-size: 105%;
 	padding-bottom: .25em;
+	 
 }
 main img {
 	padding-bottom: 1em;
@@ -55,7 +97,9 @@ main p {
 main blockquote {
 	padding: 0 2em;
 	font-style: italic;
-}
+        padding-right: 2em; 
+        padding-left: 2em; 
+	font-style: italic;
 main ul {
 	padding: 0 0 .25em 1.25em;
 }
@@ -67,4 +111,15 @@ main li {
 footer p {
 	text-align: center;
 	padding: 1em 0;
+	border-top: 3px solid #931420;
+        background-color: #931420;
+}
+
+footer p {
+    color: white;
+}
+
+/* Blockquote styles */
+blockquote {
+    font-style: italic;
 }
